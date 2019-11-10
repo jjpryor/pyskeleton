@@ -2,7 +2,6 @@
 
 Quick one-liner on **this**
 
-
 #### Table of Contents
 
 1. [Description](#description)
@@ -46,7 +45,6 @@ Include usage examples for common use cases in the **Usage** section.
 
 ## Reference **OPTIONAL**
 
-
 ## Limitations
 
 In the Limitations section, list any incompatibilities, known issues, or other warnings.
@@ -57,4 +55,4 @@ In the Development section, tell other how to setup a development environment.
 
 ## Release Notes/Contributors/Etc. **Optional**
 
-If you aren't using changelog, put your release notes here (though you should consider using changelog). You can also add any additional sections you feel are necessary or important to include here. Please use the `## ` header.
+If you aren't using changelog, put your release notes here.
