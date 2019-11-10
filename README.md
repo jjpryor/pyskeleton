@@ -43,7 +43,7 @@ The very basic steps needed for a user to get **this** up and running. This can 
 
 Include usage examples for common use cases in the **Usage** section.
 
-## Reference **OPTIONAL**
+## Reference
 
 ## Limitations
 
@@ -53,6 +53,6 @@ In the Limitations section, list any incompatibilities, known issues, or other w
 
 In the Development section, tell other how to setup a development environment.
 
-## Release Notes/Contributors/Etc. **Optional**
+## Release Notes
 
 If you aren't using changelog, put your release notes here.
