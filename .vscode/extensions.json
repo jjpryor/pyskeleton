@@ -1,0 +1,12 @@
+{
+    "recommendations": [
+        "DavidAnson.vscode-markdownlint",
+        "magicstack.MagicPython",
+        "ms-python.python",
+        "samuelcolvin.jinjahtml",
+        "shd101wyy.markdown-preview-enhanced",
+        "streetsidesoftware.code-spell-checker",
+        "donjayamanne.githistory",
+        "eamodio.gitlens"
+    ]
+}

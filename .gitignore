@@ -1,0 +1,18 @@
+# Temporary files #
+###################
+*.swp
+*.swo
+*~
+*.kate-swp
+
+# Ansible retry files (these are an ansible 2.0 phenomena)
+*.retry
+
+# Vagrant
+.vagrant
+
+# Python object files
+*.py[cod]
+
+# Git/gerrit
+.gitreview
