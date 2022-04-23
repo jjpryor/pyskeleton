@@ -1,0 +1,6 @@
+flake8
+pylint
+ipython
+click
+rich
+tqdm
