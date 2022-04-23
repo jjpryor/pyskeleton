@@ -1,12 +1,14 @@
 {
     "recommendations": [
-        "DavidAnson.vscode-markdownlint",
-        "magicstack.MagicPython",
+        "davidanson.vscode-markdownlint",
+        "donjayamanne.githistory",
+        "eamodio.gitlens",
+        "mechatroner.rainbow-csv",
         "ms-python.python",
+        "redhat.vscode-yaml",
         "samuelcolvin.jinjahtml",
         "shd101wyy.markdown-preview-enhanced",
         "streetsidesoftware.code-spell-checker",
-        "donjayamanne.githistory",
-        "eamodio.gitlens"
+        "timonwong.shellcheck"
     ]
 }

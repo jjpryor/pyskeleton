@@ -16,3 +16,6 @@
 
 # Git/gerrit
 .gitreview
+
+# python virtual env
+.venv
