@@ -1,11 +1,12 @@
 #!/usr/bin/env python
 """
-A CLI tool using Click
+A sample CLI tool using python's logging and external libraries Click, Rich, and TQDM
 """
 import logging
 import pathlib
 import re
 import sys
+import time
 import click
 from rich.logging import RichHandler
 from rich.pretty import pprint
@@ -69,27 +70,35 @@ def some_func_with_warning():
 
 
 @click.group()
-@click.option('--loglevel', '-ll', default='NOTSET', help='Set logging output level. Defaults to NOTSET', type=click.Choice(['CRITICAL', 'ERROR', 'WARNING', 'INFO', 'DEBUG', 'NOTSET'], case_sensitive=False))
-def main(loglevel):
+@click.option('--loglevel', '-ll', default='NOTSET', help='Set logging output level. Defaults to notset', type=click.Choice(['critical', 'error', 'warning', 'info', 'debug', 'notset'], case_sensitive=False))
+@click.option('--logstyle', '-ls', default='RICH', help='Set logging output readable-style. Defaults to \'rich\' styled.', type=click.Choice(['rich', 'plain'], case_sensitive=False))
+def main(loglevel, logstyle):
     """
-    This is a CLI tool by way of Click
+    A sample CLI tool using python's logging and external libraries Click, Rich, and TQDM.
+    By default, all logging to levels is disabled (set to NOTSET) for reduced output to STDOUT.
+    If any loglevel other than NOTSET is set, then by default Rich is used to style the log output via log handler arg.
+    Non-Rich aka plain-normal styled logging can be enabled by passing '-ls plain'
     """
-    if loglevel:
-        if str(loglevel).upper() != "NOTSET":
-            logging.basicConfig(level=str(loglevel).upper(), format='%(asctime)s %(name)s.%(funcName)s +%(lineno)s: %(levelname)-8s [%(process)d] %(message)s', handlers=[RichHandler()])
-    else:
-        # logging.basicConfig(level="NOTSET", format='',)
-        # FORMAT =
-        logging.basicConfig(level="NOTSET", format="%(message)s", datefmt="[%X]", handlers=[RichHandler()])
+    # print(f"{loglevel}")
+    if str(loglevel).upper() == "NOTSET":
+        # this disables logging.getLogger of all logging of 'CRITICAL', 'ERROR', 'WARNING', 'INFO', 'DEBUG'
+        logger.setLevel(logging.CRITICAL + 1)
+    if str(logstyle).upper() == "RICH" and str(loglevel).upper() != "NOTSET":
+        FORMAT = "%(name)s %(message)s"
+        logging.basicConfig(level=str(loglevel).upper(), format=FORMAT, datefmt="[%D%X]", handlers=[RichHandler()])
+    if str(logstyle).upper() == "PLAIN" and str(loglevel).upper() != "NOTSET":
+        logging.basicConfig(level=str(loglevel).upper(), format='%(asctime)s %(name)s %(levelname)-8s %(message)s',)
 
 
 @main.command()
 @click.argument('csvfile', type=click.Path(exists=True))
 def csvstats(csvfile):
     """
-    loads a csvfile, prints some stats, then prints the first row using a TQDM progress bar wrapper
+    Loads a csvfile as input, prints some stats, then iterates with a TQDM progress bar wrapper (only the first line in the file) and pretty prints the line using Rich.
     """
     logger.debug(f"csvfile is {csvfile}")
+    print("a 3 second sleep so that we can see different timestamps in the logs")
+    time.sleep(3)
     csvfile_path = pathlib.Path.cwd() / f"{csvfile}"
     csvfile_len = file_len(csvfile_path)
     print(f"csvfile {csvfile} length is {csvfile_len}")
@@ -115,6 +124,8 @@ def csvstats(csvfile):
         logger.info("The pprint uses Rich to colorize the pprint")
         pprint(values)
         logger.debug(f"current_line_num is {current_line_num}")
+    logger.info("a 3 second sleep so that we can see different timestamps in the logs")
+    time.sleep(3)
     some_func_with_warning()
 
 
