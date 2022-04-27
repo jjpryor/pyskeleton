@@ -110,9 +110,9 @@ def main(ctx, loglevel, logstyle):
 
         # https://rich.readthedocs.io/en/stable/logging.html
         from rich.logging import RichHandler
-        FORMAT = "%(name)s %(message)s"
         # https://docs.python.org/3/library/logging.html#logging.basicConfig
         # https://docs.python.org/3/library/datetime.html#strftime-and-strptime-format-codes
+        FORMAT = "%(name)s %(message)s"
         logging.basicConfig(level=str(loglevel).upper(), format=FORMAT, datefmt="%Y-%m-%d-%H-%M-%S-%f-%z]", handlers=[RichHandler()])
 
         # https://rich.readthedocs.io/en/stable/traceback.html
@@ -171,6 +171,7 @@ def csvstats(ctx, csvfile):
     except Exception:
         # https://click.palletsprojects.com/en/8.1.x/commands/#nested-handling-and-contexts
         if ctx.obj['logstyle'] == "RICH":
+            # https://rich.readthedocs.io/en/stable/console.html
             ctx.obj['console'].print_exception(show_locals=True)
         else:
             # https://docs.python.org/3/library/traceback.html#traceback.format_exc
