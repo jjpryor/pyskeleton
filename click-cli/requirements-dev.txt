@@ -3,4 +3,5 @@ pylint
 ipython
 click
 rich
+rich-click
 tqdm
