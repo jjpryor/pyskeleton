@@ -2,10 +2,7 @@
 
 Quick one-liner on MyHotNEwTHing
 
-#### Table of Contents
-
 * [MyHotNEwTHing](#myhotnewthing)
-      * [Table of Contents](#table-of-contents)
   * [Description](#description)
   * [Setup](#setup)
     * [What is  affected](#what-is--affected)
