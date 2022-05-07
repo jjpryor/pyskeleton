@@ -1,6 +1,6 @@
-# **this**
+# MyHotNEwTHing
 
-Quick one-liner on **this**
+Quick one-liner onMyHotNEwTHing
 
 #### Table of Contents
 
@@ -13,31 +13,31 @@ Quick one-liner on **this**
 
 ## Description
 
-Tell users why they might want to use this. Explain what **this** does and what kind of problems users can solve with it.
+Tell users why they might want to use this. Explain what MyHotNEwTHing does and what kind of problems users can solve with it.
 
-This should be a fairly short description helps the user decide if **this** is what they want.
+This should be a fairly short description helps the user decide ifMyHotNEwTHing is what they want.
 
 ## Setup
 
 ### What is  affected
 
-If it's obvious what **this** touches, you can skip this section.
+If it's obvious what MyHotNEwTHing touches, you can skip this section.
 
 If there's more that they should know about, though, this is the place to mention:
 
-* Files, packages, services, or operations that **this** will alter, impact, or execute.
-* Dependencies that **this** automatically installs.
+* Files, packages, services, or operations thatMyHotNEwTHing will alter, impact, or execute.
+* Dependencies thatMyHotNEwTHing automatically installs.
 * Warnings or other important notices.
 
 ### Setup Requirements
 
-If **this** requires anything extra before setting up mention it here.
+If MyHotNEwTHing requires anything extra before setting up mention it here.
 
 If your most recent release breaks compatibility or requires particular steps for upgrading, you might want to include an additional "Upgrading" section here.
 
 ### Beginning with this
 
-The very basic steps needed for a user to get **this** up and running. This can include setup steps, if necessary, or it can be an example of the most basic use of this.
+The very basic steps needed for a user to getMyHotNEwTHing up and running. This can include setup steps, if necessary, or it can be an example of the most basic use of this.
 
 ## Usage
 

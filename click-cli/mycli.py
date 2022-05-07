@@ -178,5 +178,16 @@ def csvstats(ctx, csvfile):
             print(traceback.format_exc())
 
 
+@main.command()
+# https://click.palletsprojects.com/en/8.1.x/arguments/#file-arguments
+@click.argument('csvfile', type=click.Path(exists=True))
+# https://click.palletsprojects.com/en/8.1.x/commands/#nested-handling-and-contexts
+# Commands can also ask for the context to be passed by marking themselves with the pass_context() decorator.
+# In that case, the context is passed as first argument.
+@click.pass_context
+def my_clone(ctx, csvfile):
+    pass
+
+
 if __name__ == "__main__":
     main()
