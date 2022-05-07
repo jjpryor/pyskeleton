@@ -1,21 +1,27 @@
 # MyHotNEwTHing
 
-Quick one-liner onMyHotNEwTHing
+Quick one-liner on MyHotNEwTHing
 
 #### Table of Contents
 
-1. [Description](#description)
-2. [Setup - The basics of getting started](#setup)
-3. [Usage - Configuration options and additional functionality](#usage)
-4. [Limitations - OS compatibility, etc.](#limitations)
-5. [Development - Guide for contributing](#development)
-6. [Release Notes](#release-notes)
+* [MyHotNEwTHing](#myhotnewthing)
+      * [Table of Contents](#table-of-contents)
+  * [Description](#description)
+  * [Setup](#setup)
+    * [What is  affected](#what-is--affected)
+    * [Setup Requirements](#setup-requirements)
+    * [Getting Started](#getting-started)
+  * [Usage](#usage)
+  * [Reference](#reference)
+  * [Limitations](#limitations)
+  * [Development](#development)
+  * [Release Notes](#release-notes)
 
 ## Description
 
 Tell users why they might want to use this. Explain what MyHotNEwTHing does and what kind of problems users can solve with it.
 
-This should be a fairly short description helps the user decide ifMyHotNEwTHing is what they want.
+This should be a fairly short description helps the user decide if MyHotNEwTHing is what they want.
 
 ## Setup
 
@@ -25,8 +31,8 @@ If it's obvious what MyHotNEwTHing touches, you can skip this section.
 
 If there's more that they should know about, though, this is the place to mention:
 
-* Files, packages, services, or operations thatMyHotNEwTHing will alter, impact, or execute.
-* Dependencies thatMyHotNEwTHing automatically installs.
+* Files, packages, services, or operations that MyHotNEwTHing will alter, impact, or execute.
+* Dependencies that MyHotNEwTHing automatically installs.
 * Warnings or other important notices.
 
 ### Setup Requirements
@@ -35,9 +41,9 @@ If MyHotNEwTHing requires anything extra before setting up mention it here.
 
 If your most recent release breaks compatibility or requires particular steps for upgrading, you might want to include an additional "Upgrading" section here.
 
-### Beginning with this
+### Getting Started
 
-The very basic steps needed for a user to getMyHotNEwTHing up and running. This can include setup steps, if necessary, or it can be an example of the most basic use of this.
+The very basic steps needed for a user to get MyHotNEwTHing up and running. This can include setup steps, if necessary, or it can be an example of the most basic use of this.
 
 ## Usage
 
